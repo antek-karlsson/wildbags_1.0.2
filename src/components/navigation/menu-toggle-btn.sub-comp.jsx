@@ -1,14 +1,15 @@
 import { IconButton } from "@chakra-ui/react";
-import { MdOutlineClose, MdOutlineMenu } from "react-icons/md";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const MenuToggleBtn = ({ toggleIsOpen, isOpen }) => {
+const MenuToggleBtn = ({ isOpen, onOpen, onClose }) => {
   return (
     <IconButton
-      bg="transparent"
-      fontSize="2rem"
-      display={["block", "none"]}
-      onClick={toggleIsOpen}
-      icon={isOpen ? <MdOutlineClose /> : <MdOutlineMenu />}
+      colorScheme={"teal"}
+      fontSize={"1.5rem"}
+      icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+      aria-label={"Open Menu"}
+      display={{ sm: "none" }}
+      onClick={isOpen ? onClose : onOpen}
     />
   );
 };
