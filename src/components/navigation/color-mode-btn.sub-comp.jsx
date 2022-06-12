@@ -1,19 +1,19 @@
-import { IconButton, useColorMode, Box } from "@chakra-ui/react";
+import { IconButton, useColorMode } from "@chakra-ui/react";
 import { MdOutlineWbSunny, MdOutlineNightlight } from "react-icons/md";
 
 const ColorModeBtn = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box alignSelf="flex-end">
-      <IconButton
-        bg="transparent"
-        icon={
-          colorMode === "light" ? <MdOutlineNightlight /> : <MdOutlineWbSunny />
-        }
-        isRound="true"
-        onClick={toggleColorMode}
-      />
-    </Box>
+    <IconButton
+      alignSelf={"flex-end"}
+      colorScheme={"teal"}
+      icon={
+        colorMode === "light" ? <MdOutlineNightlight /> : <MdOutlineWbSunny />
+      }
+      isRound="true"
+      onClick={toggleColorMode}
+      fontSize={"1.5rem"}
+    />
   );
 };
 
