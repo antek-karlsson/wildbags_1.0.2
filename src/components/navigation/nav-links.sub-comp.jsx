@@ -3,7 +3,11 @@ import NavLink from "./nav-link.sub-comp";
 
 const NavLinks = ({ isOpen }) => {
   return (
-    <Box display={[isOpen ? "block" : "none", "block"]}>
+    <Box
+      display={[isOpen ? "block" : "none", "block"]}
+      alignSelf={["flex-start", "center"]}
+      p={"4"}
+    >
       <Stack display="flex" direction={["column", "row"]} spacing={8}>
         <NavLink to={"/"} label={"Home"} />
         <NavLink to={"/shop"} label={"Sklep"} />
