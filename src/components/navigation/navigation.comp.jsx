@@ -1,24 +1,28 @@
-import { Flex, HStack, Spacer, VStack } from "@chakra-ui/react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import Logo from "./logo.sub-comp";
+import { HStack, VStack, useDisclosure, Box } from "@chakra-ui/react";
+import Logo from "../global/logo.sub-comp";
 import NavLinks from "./nav-links.sub-comp";
 import ColorModeBtn from "./color-mode-btn.sub-comp";
 import MenuToggleBtn from "./menu-toggle-btn.sub-comp";
+import CartIcon from "./cart-icon.sub-comp";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleIsOpen = () => setIsOpen(!isOpen);
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <VStack p={4}>
-      <ColorModeBtn />
-      <VStack>
-        <Logo />
-        <Spacer />
-        <MenuToggleBtn isOpen={isOpen} toggleIsOpen={toggleIsOpen} />
-      </VStack>
-      <NavLinks isOpen={isOpen} />
-    </VStack>
+    <>
+      <Box p={4}>
+        <VStack>
+          <ColorModeBtn />
+          <Box w={"10rem"}>
+            <Logo />
+          </Box>
+          <HStack w={"100%"} justify={["space-between", "center"]} p={"4"}>
+            <MenuToggleBtn isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
+            <CartIcon />
+          </HStack>
+          <NavLinks isOpen={isOpen} />
+        </VStack>
+      </Box>
+    </>
   );
 };
 
