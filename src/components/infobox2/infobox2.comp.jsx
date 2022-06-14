@@ -21,7 +21,12 @@ const Infobox2 = () => {
         </Stack>
       </Flex>
       <Flex flex={1}>
-        <Image alt={"infobox_1"} objectFit={"cover"} src={infobox_2} />
+        <Image
+          alt={"infobox_1"}
+          objectFit={"cover"}
+          src={infobox_2}
+          borderRadius={"2xl"}
+        />
       </Flex>
     </Stack>
   );

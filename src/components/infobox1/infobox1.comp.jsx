@@ -5,7 +5,12 @@ const Infobox1 = () => {
   return (
     <Stack p={8} direction={{ base: "column", md: "row" }}>
       <Flex flex={1}>
-        <Image alt={"infobox_1"} objectFit={"cover"} src={infobox_1} />
+        <Image
+          alt={"infobox_1"}
+          objectFit={"cover"}
+          src={infobox_1}
+          borderRadius={"2xl"}
+        />
       </Flex>
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
