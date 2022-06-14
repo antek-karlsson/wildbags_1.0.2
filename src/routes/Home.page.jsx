@@ -4,6 +4,7 @@ import Navigation from "../components/navigation/navigation.comp";
 import Hero from "../components/hero/hero.comp";
 import Infobox1 from "../components/infobox1/infobox1.comp";
 import Infobox2 from "../components/infobox2/infobox2.comp";
+import FeaturesBox from "../components/features-box/features-box.comp";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Infobox1 />
       <Infobox2 />
+      <FeaturesBox />
       <Footer />
     </>
   );
