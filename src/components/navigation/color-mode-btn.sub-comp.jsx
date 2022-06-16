@@ -1,5 +1,5 @@
 import { IconButton, useColorMode } from "@chakra-ui/react";
-import { MdOutlineWbSunny, MdOutlineNightlight } from "react-icons/md";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 const ColorModeBtn = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -7,9 +7,7 @@ const ColorModeBtn = () => {
     <IconButton
       alignSelf={"flex-end"}
       colorScheme={"teal"}
-      icon={
-        colorMode === "light" ? <MdOutlineNightlight /> : <MdOutlineWbSunny />
-      }
+      icon={colorMode === "light" ? <FiMoon /> : <FiSun />}
       isRound="true"
       onClick={toggleColorMode}
       fontSize={"1.5rem"}
