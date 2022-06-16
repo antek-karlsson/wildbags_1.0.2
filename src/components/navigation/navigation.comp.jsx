@@ -12,9 +12,7 @@ const Navigation = () => {
       <Box p={4}>
         <VStack>
           <ColorModeBtn />
-          <Box w={"10rem"}>
-            <Logo />
-          </Box>
+          <Logo boxSize={"10rem"} />
           <HStack w={"100%"} justify={["space-between", "center"]} p={"4"}>
             <MenuToggleBtn isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
             <CartIcon />
