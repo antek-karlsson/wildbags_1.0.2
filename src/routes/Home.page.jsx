@@ -5,6 +5,7 @@ import Hero from "../components/hero/hero.comp";
 import Infobox1 from "../components/infobox1/infobox1.comp";
 import Infobox2 from "../components/infobox2/infobox2.comp";
 import FeaturesBox from "../components/features-box/features-box.comp";
+import Contactbox from "../components/contactbox/contact-box.comp";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Infobox1 />
       <Infobox2 />
       <FeaturesBox />
+      <Contactbox />
       <Footer />
     </>
   );
