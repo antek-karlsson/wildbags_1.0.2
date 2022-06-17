@@ -3,8 +3,8 @@ import infobox_2 from "../../assets/images/home_images/infobox_2.png";
 
 const Infobox2 = () => {
   return (
-    <Stack bg={"teal.500"} p={8} direction={{ base: "column", md: "row" }}>
-      <Flex p={8} flex={1} align={"center"} justify={"center"}>
+    <Stack bg={"teal.500"} p={16} direction={{ base: "column", md: "row" }}>
+      <Flex p={4} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
             <Text>

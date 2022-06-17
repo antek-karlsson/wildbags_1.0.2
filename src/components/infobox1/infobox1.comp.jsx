@@ -3,7 +3,7 @@ import infobox_1 from "../../assets/images/home_images/infobox_1.png";
 
 const Infobox1 = () => {
   return (
-    <Stack p={8} direction={{ base: "column", md: "row" }}>
+    <Stack p={16} direction={{ base: "column", md: "row" }}>
       <Flex flex={1}>
         <Image
           alt={"infobox_1"}
@@ -12,7 +12,7 @@ const Infobox1 = () => {
           borderRadius={"2xl"}
         />
       </Flex>
-      <Flex p={8} flex={1} align={"center"} justify={"center"}>
+      <Flex p={4} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text>Info</Text>
