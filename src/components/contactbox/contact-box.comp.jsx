@@ -46,7 +46,11 @@ const Contactbox = () => {
       );
   };
   return (
-    <Stack bg={"teal.500"} p={16} direction={{ base: "column", md: "row" }}>
+    <Stack
+      bg={"teal.500"}
+      p={{ base: 6, md: 12, lg: 16 }}
+      direction={{ base: "column", md: "row" }}
+    >
       <Flex p={4} flex={1} align={"center"} justify={"center"}>
         <VStack
           w={["100%", "100%", "80%"]}
