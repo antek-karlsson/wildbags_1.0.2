@@ -1,5 +1,5 @@
-import { Link, Link as RRLink } from "react-router-dom";
-import { Flex } from "@chakra-ui/react";
+import { Link as RRLink } from "react-router-dom";
+import { Flex, Link } from "@chakra-ui/react";
 
 const NavLink = ({ to, label }) => {
   return (
@@ -7,12 +7,13 @@ const NavLink = ({ to, label }) => {
       <Link
         as={RRLink}
         to={to}
-        px={2}
-        py={1}
+        px={8}
+        py={2}
+        borderRadius={"lg"}
         color={"teal"}
         _hover={{
           color: "white",
-          bg: "teal",
+          bg: "linear-gradient(45deg, rgba(49,151,149,1) 0%, rgba(255,255,255,1) 100%)",
         }}
       >
         {label}
