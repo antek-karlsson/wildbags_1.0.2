@@ -17,14 +17,14 @@ const Infobox1 = () => {
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text>Info</Text>
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+          <Text fontSize={{ base: "md", lg: "lg" }} color={"teal"}>
             Wszystkie produkty , które tu zobaczysz stworzone są zgodnie z ideą
             #upcykling , czyli zmniejszeniem zużycia surowców naturalnych oraz
             wytwarzanych odpadów poprzez tworzenie produktów z materiałów z
             drugiej ręki o wyższej wartości niż pojedyncze tworzywo użyte do
             stworzenia danej rzeczy.
           </Text>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+          <Text fontSize={{ base: "md", lg: "lg" }} color={"teal"}>
             To rędzieło, które powstaje z ciągłych poszukiwań oryginalnych
             materiałów z drugiego obiegu i jest kreatywnie przekształcane w
             zupełnie nową rzecz.
