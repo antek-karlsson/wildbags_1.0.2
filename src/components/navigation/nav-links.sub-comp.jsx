@@ -10,7 +10,7 @@ const NavLinks = ({ isOpen }) => {
     >
       <Stack display="flex" direction={["column", "row"]} spacing={8}>
         <NavLink to={"/"} label={"Home"} />
-        <NavLink to={"/shop"} label={"Sklep"} />
+        <NavLink to={"/"} label={"Sklep"} />
         <NavLink to={"/about"} label={"O mnie"} />
         <NavLink to={"/custom"} label={"Personalizowane"} />
       </Stack>
