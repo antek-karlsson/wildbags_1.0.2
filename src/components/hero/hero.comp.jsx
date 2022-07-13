@@ -12,7 +12,6 @@ const Hero = () => {
   return (
     <Flex
       bgImage={hero_img}
-      w={"100vw"}
       h={"90vh"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
