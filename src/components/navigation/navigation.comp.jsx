@@ -1,4 +1,5 @@
-import { HStack, VStack, useDisclosure, Box } from "@chakra-ui/react";
+import { Link as RRLink } from "react-router-dom";
+import { HStack, VStack, useDisclosure, Box, Link } from "@chakra-ui/react";
 import Logo from "../global/logo.sub-comp";
 import NavLinks from "./nav-links.sub-comp";
 import ColorModeBtn from "./color-mode-btn.sub-comp";
@@ -12,7 +13,9 @@ const Navigation = () => {
       <Box p={4}>
         <VStack>
           <ColorModeBtn />
-          <Logo boxSize={"10rem"} />
+          <Link as={RRLink} to="/">
+            <Logo boxSize={"10rem"} />
+          </Link>
           <HStack w={"100%"} justify={["space-between", "center"]} p={"4"}>
             <MenuToggleBtn isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
             <CartIcon />
