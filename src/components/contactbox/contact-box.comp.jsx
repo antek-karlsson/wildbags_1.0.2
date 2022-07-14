@@ -46,7 +46,6 @@ const Contactbox = () => {
   };
   return (
     <Stack
-      bg={"teal.500"}
       p={{ base: 6, md: 12, lg: 16 }}
       direction={{ base: "column", md: "row" }}
     >
@@ -84,13 +83,7 @@ const Contactbox = () => {
             <FormLabel>Wiadomość</FormLabel>
             <Textarea id={"message"} name={"message"} />
           </FormControl>
-          <Button
-            value={"send"}
-            w={"100%"}
-            size={"lg"}
-            type={"submit"}
-            colorScheme={"pink"}
-          >
+          <Button value={"send"} w={"100%"} size={"lg"} type={"submit"}>
             Wyślij
           </Button>
         </VStack>

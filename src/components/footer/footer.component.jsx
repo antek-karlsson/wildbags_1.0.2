@@ -40,7 +40,7 @@ const Footer = () => {
             href="https://www.instagram.com/_wildbags/?hl=pl"
             target="_blank"
           >
-            <IconButton colorScheme={"teal"} icon={<FiInstagram />} />
+            <IconButton icon={<FiInstagram />} />
           </Link>
         </Tooltip>
       </HStack>

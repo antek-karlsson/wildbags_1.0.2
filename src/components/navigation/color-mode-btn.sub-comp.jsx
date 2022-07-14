@@ -6,7 +6,6 @@ const ColorModeBtn = () => {
   return (
     <IconButton
       alignSelf={"flex-end"}
-      colorScheme={"teal"}
       icon={colorMode === "light" ? <FiMoon /> : <FiSun />}
       isRound="true"
       onClick={toggleColorMode}

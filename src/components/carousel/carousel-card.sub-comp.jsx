@@ -1,11 +1,12 @@
-import { VStack, Image, Text } from "@chakra-ui/react";
+import { VStack, Image, Text, useColorMode } from "@chakra-ui/react";
 
 const CarouselCard = ({ imgSrc, prodName, prodPrice }) => {
+  const { colorMode } = useColorMode();
   return (
     <VStack
       justify={"center"}
       align={"center"}
-      border={"1px solid teal"}
+      border={colorMode === "light" ? "1px solid black" : "1px solid white"}
       borderRadius={"3xl"}
     >
       <Image src={imgSrc} p={6} borderRadius={"lg"} />

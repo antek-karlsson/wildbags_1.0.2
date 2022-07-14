@@ -26,21 +26,11 @@ const CopyBtn = ({ copyValue, copyLabel, icon }) => {
             hasArrow
             closeOnClick={false}
           >
-            <IconButton
-              value={value}
-              icon={icon}
-              onClick={onCopy}
-              colorScheme={"teal"}
-            />
+            <IconButton value={value} icon={icon} onClick={onCopy} />
           </Tooltip>
         </Box>
       </PopoverTrigger>
-      <PopoverContent
-        color={"white"}
-        bg={"teal.500"}
-        borderColor={"teal.500"}
-        textAlign={"center"}
-      >
+      <PopoverContent textAlign={"center"}>
         <PopoverHeader fontWeight={"bold"} p={2}>
           {copyLabel}
         </PopoverHeader>
