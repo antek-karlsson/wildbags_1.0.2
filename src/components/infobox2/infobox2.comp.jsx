@@ -4,7 +4,13 @@ import infobox_2 from "../../assets/images/home_images/infobox_2.png";
 const Infobox2 = () => {
   return (
     <Stack p={16} direction={{ base: "column", md: "row" }}>
-      <Flex p={4} flex={1} align={"center"} justify={"center"}>
+      <Flex
+        p={4}
+        flex={1}
+        align={"center"}
+        justify={"center"}
+        order={{ base: 2, md: 1 }}
+      >
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
             <Text>
@@ -18,7 +24,7 @@ const Infobox2 = () => {
           <Text fontSize={{ base: "md", lg: "lg" }}>wildbags@wildbags.pl</Text>
         </Stack>
       </Flex>
-      <Flex flex={1}>
+      <Flex flex={1} order={{ base: 1, md: 2 }}>
         <Image
           alt={"infobox_1"}
           objectFit={"cover"}
