@@ -12,13 +12,15 @@ const Navigation = () => {
     <>
       <Box p={4}>
         <VStack>
-          <ColorModeBtn />
+          <HStack alignSelf={"flex-end"}>
+            <CartIcon />
+            <ColorModeBtn />
+          </HStack>
           <Link as={RRLink} to="/">
             <Logo boxSize={"10rem"} />
           </Link>
           <HStack w={"100%"} justify={["space-between", "center"]} p={"4"}>
             <MenuToggleBtn isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
-            <CartIcon />
           </HStack>
           <NavLinks isOpen={isOpen} />
         </VStack>
