@@ -1,6 +1,5 @@
+import { Link as RRLink } from "react-router-dom";
 import {
-  Box,
-  Flex,
   Stack,
   Link,
   HStack,
@@ -22,7 +21,9 @@ const Footer = () => {
       p={4}
       borderTop={"1px"}
     >
-      <Logo boxSize={"5rem"} />
+      <Link as={RRLink} to="/">
+        <Logo boxSize={"5rem"} />
+      </Link>
       <HStack>
         <CopyBtn
           copyValue="wildbags@wildbags.pl"

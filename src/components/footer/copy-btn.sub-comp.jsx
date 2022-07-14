@@ -13,10 +13,8 @@ import {
   PopoverBody,
 } from "@chakra-ui/react";
 
-import { FiMail } from "react-icons/fi";
-
 const CopyBtn = ({ copyValue, copyLabel, icon }) => {
-  const [value, setValue] = useState(copyValue);
+  const [value] = useState(copyValue);
   const { hasCopied, onCopy } = useClipboard(value);
 
   return (

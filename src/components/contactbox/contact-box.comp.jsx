@@ -6,7 +6,6 @@ import {
   Stack,
   Flex,
   Heading,
-  Text,
   Image,
   FormControl,
   FormLabel,

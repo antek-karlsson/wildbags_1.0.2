@@ -1,5 +1,5 @@
-import { Box, HStack, Image } from "@chakra-ui/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Box } from "@chakra-ui/react";
+import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 
@@ -19,23 +19,6 @@ import p_13 from "../../assets/images/product_images/p_13.png";
 import p_14 from "../../assets/images/product_images/p_14.png";
 
 import CarouselCard from "./carousel-card.sub-comp";
-
-const imgList = [
-  "p_1",
-  "p_2",
-  "p_3",
-  "p_4",
-  "p_5",
-  "p_6",
-  "p_7",
-  "p_8",
-  "p_9",
-  "p_10",
-  "p_11",
-  "p_12",
-  "p_13",
-  "p_14",
-];
 
 const Carousel = () => {
   return (

@@ -3,7 +3,6 @@ import {
   VStack,
   Stack,
   Text,
-  Button,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import hero_img from "../../assets/images/home_images/hero_img.jpg";
