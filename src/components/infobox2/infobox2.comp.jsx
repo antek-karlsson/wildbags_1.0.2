@@ -12,7 +12,10 @@ const Infobox2 = () => {
         order={{ base: 2, md: 1 }}
       >
         <Stack spacing={6} w={"full"} maxW={"lg"}>
-          <Heading fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
+          <Heading
+            id="amatic-header"
+            fontSize={{ base: "2rem", md: "3rem", lg: "4rem" }}
+          >
             <Text>
               Chciałabyś mieć wyjątkową torbę lub kosmetyczkę z wymarzonego
               materiału w ulubionym kolorze?

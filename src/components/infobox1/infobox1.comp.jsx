@@ -14,7 +14,10 @@ const Infobox1 = () => {
       </Flex>
       <Flex p={4} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+          <Heading
+            id="amatic-header"
+            fontSize={{ base: "3rem", md: "4rem", lg: "5rem" }}
+          >
             <Text>Info</Text>
           </Heading>
           <Text fontSize={{ base: "md", lg: "lg" }}>
