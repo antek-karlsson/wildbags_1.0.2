@@ -17,7 +17,7 @@ const Navigation = () => {
             <ColorModeBtn />
           </HStack>
           <Link as={RRLink} to="/">
-            <Logo boxSize={"10rem"} />
+            <Logo boxSize={"100%"} />
           </Link>
           <HStack w={"100%"} justify={["space-between", "center"]} p={"4"}>
             <MenuToggleBtn isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
