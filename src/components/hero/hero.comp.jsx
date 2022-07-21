@@ -23,10 +23,11 @@ const Hero = () => {
       >
         <Stack maxW={"2xl"} align={"center"} justify={"center"} spacing={6}>
           <Text
+            id="amatic-header"
             color={"white"}
             fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "3xl", md: "6xl" })}
+            fontSize={useBreakpointValue({ base: "3rem", md: "6rem" })}
           >
             ODKRYJ ABSOLUTNIE NIEPOSPOLITY ŚWIAT UPCYCLINGU I NOŚ SIĘ WYJĄTKOWO!
           </Text>
