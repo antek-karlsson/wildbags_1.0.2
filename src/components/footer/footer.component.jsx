@@ -32,10 +32,10 @@ const Footer = () => {
         />
         <CopyBtn
           copyValue="+48 537 254 320"
-          copyLabel="Phone Number"
+          copyLabel="Numer telefonu"
           icon={<FiPhoneCall />}
         />
-        <Tooltip label={"Check out our Instagram!"} hasArrow>
+        <Tooltip label={"Sprawdź mojego Instagrama!"} hasArrow>
           <Link
             href="https://www.instagram.com/_wildbags/?hl=pl"
             target="_blank"
