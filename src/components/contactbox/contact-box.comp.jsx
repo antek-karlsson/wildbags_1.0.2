@@ -57,7 +57,12 @@ const Contactbox = () => {
           onSubmit={sendEmail}
           spacing={8}
         >
-          <Heading>Kontaktuj się!</Heading>
+          <Heading
+            id="amatic-header"
+            fontSize={{ base: "3rem", md: "4rem", lg: "5rem" }}
+          >
+            Kontaktuj się!
+          </Heading>
           <FormControl isRequired>
             <FormLabel>Imię</FormLabel>
             <InputGroup>
