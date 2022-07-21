@@ -22,7 +22,9 @@ const CopyBtn = ({ copyValue, copyLabel, icon }) => {
       <PopoverTrigger>
         <Box>
           <Tooltip
-            label={hasCopied ? `${copyLabel} Copied!` : `Copy ${copyLabel}`}
+            label={
+              hasCopied ? `Skopiowano ${copyLabel}!` : `Skopiuj ${copyLabel}`
+            }
             hasArrow
             closeOnClick={false}
           >
