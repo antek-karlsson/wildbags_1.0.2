@@ -4,8 +4,19 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
 } from "firebase/auth";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  setDoc,
+  collection,
+  writeBatch,
+  query,
+  getDocs,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDzUH_s7Dbiy_crH7Zhv29fY4yV6xbJZj0",
@@ -20,3 +31,37 @@ const firebaseApp = initializeApp(firebaseConfig);
 const storage = getStorage();
 const auth = getAuth();
 const db = getFirestore(firebaseApp);
+
+export const createUserDoc = async (userAuth, additionalInformation = {}) => {
+  if (!userAuth) return;
+  const userDocRef = await doc(db, "users", userAuth.uid);
+  const userSnapshot = await getDoc(userDocRef);
+
+  if (userSnapshot.exists()) {
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+    try {
+      setDoc(userDocRef, {
+        displayName,
+        email,
+        createdAt,
+        ...additionalInformation,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  return userDocRef;
+};
+
+export const createUser = async (email, password) => {
+  if (!email || !password) return;
+  return await createUserWithEmailAndPassword(auth, email, password);
+};
+
+export const logIn = async (email, password) => {
+  if (!email || !password) return;
+  return await signInWithEmailAndPassword(auth, email, password);
+};
+
+export const logOut = async () => await signOut(auth);
