@@ -1,6 +1,5 @@
 import { Heading, Text, Image, VStack } from "@chakra-ui/react";
 
-import Navigation from "../components/navigation/navigation.comp";
 import Footer from "../components/footer/footer.component";
 
 import customImg from "../assets/images/custom_images/custom_1.jpg";
@@ -8,7 +7,6 @@ import customImg from "../assets/images/custom_images/custom_1.jpg";
 const Custom = () => {
   return (
     <>
-      <Navigation />
       <VStack justify={"space-between"} align={"center"}>
         <Heading size={"xl"} px={{ base: 12, md: 32, lg: 64 }} py={8}>
           Haute couture, czyli torby i kosmetyczki szyte na zamówienie -

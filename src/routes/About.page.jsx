@@ -1,14 +1,12 @@
 import { Image, Heading, Text, VStack } from "@chakra-ui/react";
 
 import Footer from "../components/footer/footer.component";
-import Navigation from "../components/navigation/navigation.comp";
 
 import aboutImg from "../assets/images/about_images/about_1";
 
 const About = () => {
   return (
     <>
-      <Navigation />
       <VStack justify={"space-between"} align={"center"}>
         <Heading size={"2xl"} p={16}>
           O mnie
