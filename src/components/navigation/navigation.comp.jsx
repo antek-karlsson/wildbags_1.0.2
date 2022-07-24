@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { Link as RRLink } from "react-router-dom";
 import { HStack, VStack, useDisclosure, Box, Link } from "@chakra-ui/react";
 import Logo from "../global/logo.sub-comp";
@@ -25,6 +26,7 @@ const Navigation = () => {
           <NavLinks isOpen={isOpen} />
         </VStack>
       </Box>
+      <Outlet />
     </>
   );
 };
