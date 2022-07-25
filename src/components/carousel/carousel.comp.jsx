@@ -1,4 +1,4 @@
-import { Box, Heading, useColorMode } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
@@ -21,12 +21,11 @@ import p_14 from "../../assets/images/product_images/p_14.png";
 import CarouselCard from "./carousel-card.sub-comp";
 
 const Carousel = () => {
-  const { colorMode } = useColorMode();
   return (
     <Box textAlign={"center"} p={8}>
       <Heading
         id="amatic-header"
-        color={colorMode === "light" ? "black" : "white"}
+        color={"black"}
         fontWeight={700}
         lineHeight={1.2}
         fontSize={{ base: "3rem", md: "4rem", lg: "5rem" }}

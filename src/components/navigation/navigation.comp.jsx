@@ -3,7 +3,6 @@ import { Link as RRLink } from "react-router-dom";
 import { HStack, VStack, useDisclosure, Box, Link } from "@chakra-ui/react";
 import Logo from "../global/logo.sub-comp";
 import NavLinks from "./nav-links.sub-comp";
-import ColorModeBtn from "./color-mode-btn.sub-comp";
 import MenuToggleBtn from "./menu-toggle-btn.sub-comp";
 import CartIcon from "./cart-icon.sub-comp";
 
@@ -15,7 +14,6 @@ const Navigation = () => {
         <VStack>
           <HStack alignSelf={"flex-end"}>
             <CartIcon />
-            <ColorModeBtn />
           </HStack>
           <Link as={RRLink} to="/">
             <Logo boxSize={"100%"} />

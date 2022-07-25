@@ -9,7 +9,7 @@ import { PersistGate } from "redux-persist/integration/react";
 
 import { persistor, store } from "./store/store";
 
-import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 import App from "./App";
 
@@ -22,7 +22,6 @@ root.render(
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <ChakraProvider>
-            <ColorModeScript initialColorMode="light" />
             <App />
           </ChakraProvider>
         </BrowserRouter>
