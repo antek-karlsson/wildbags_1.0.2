@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <VStack justify={"space-between"} align={"center"}>
-        <Heading size={"2xl"} p={16}>
+        <Heading id="amatic-header" size={"2xl"} p={16}>
           O mnie
         </Heading>
 
@@ -19,11 +19,12 @@ const About = () => {
         />
 
         <Text
+          id="amatic-paragraph"
           mt={24}
           px={{ base: 12, md: 24, lg: 64 }}
           pt={12}
           pb={8}
-          fontSize={{ base: "md", lg: "lg" }}
+          fontSize={{ base: "1.2rem", lg: "1.5rem" }}
         >
           Nie będę Ciebie zanudzać historyjkami o marzeniach z dzieciństwa i
           pasji do szycia czy wzornictwa... :) Swoją pierwszą maszynę kupiłam 3
@@ -35,9 +36,10 @@ const About = () => {
           się z moją maszyną i umiem rozpoznawać jej fochy :)
         </Text>
         <Text
+          id="amatic-paragraph"
           px={{ base: 12, md: 24, lg: 64 }}
           py={8}
-          fontSize={{ base: "md", lg: "lg" }}
+          fontSize={{ base: "1.2rem", lg: "1.5rem" }}
         >
           Szyję dla Ciebie (i dla siebie też!) rzeczy z upcyklingu. Szyje ze
           wszystkiego co mam aktualnie pod ręką… Raz jest to ZASŁONA, którą
@@ -47,29 +49,25 @@ const About = () => {
           – każdego kto chce mi oddać COŚ co na pewno pójdzie na śmietnik.
         </Text>
         <Text
+          id="amatic-paragraph"
           px={{ base: 12, md: 24, lg: 64 }}
           py={8}
-          fontSize={{ base: "md", lg: "lg" }}
+          fontSize={{ base: "1.2rem", lg: "1.5rem" }}
         >
           W wieku 17-18 lat praktycznie zrezygnowałam na dłuższą metę z kupna w
           sieciówkach i chcąc nie chcąc – świadomie lub nie, przestałam wspierać
           postępujący konsumpcjonizm. Ubrania z drugiej ręki , tak samo jak te z
           drogich luksusowych sklepów mogą służyć nam dłuuuuugie lata.
-        </Text>
-        <Text
-          px={{ base: 12, md: 24, lg: 64 }}
-          py={8}
-          fontSize={{ base: "md", lg: "lg" }}
-          alignSelf={"flex-start"}
-        >
+          <br />
           BA! Mogę się pokusić nawet o stwierdzenie, że wszystko co z drugiej
           ręki jest fajniejsze!
         </Text>
         <Text
+          id="amatic-paragraph"
           px={{ base: 12, md: 24, lg: 64 }}
           pt={8}
           pb={12}
-          fontSize={{ base: "md", lg: "lg" }}
+          fontSize={{ base: "1.2rem", lg: "1.5rem" }}
         >
           Bardzo cieszy mnie fakt, że mogę przerobić niepotrzebne już komuś
           wyroby na niepowtarzalne i wyjątkowe produkty ZERO WASTE a przy okazji
