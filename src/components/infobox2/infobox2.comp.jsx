@@ -21,10 +21,12 @@ const Infobox2 = () => {
               materiału w ulubionym kolorze?
             </Text>
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }}>
+          <Text id="amatic-paragraph" fontSize={"1.5rem"}>
             Napisz do mnie - dogramy wspólnie szczegóły :)
           </Text>
-          <Text fontSize={{ base: "md", lg: "lg" }}>wildbags@wildbags.pl</Text>
+          <Text id="amatic-paragraph" fontSize={"1.5rem"}>
+            wildbags@wildbags.pl
+          </Text>
         </Stack>
       </Flex>
       <Flex flex={1} order={{ base: 1, md: 2 }}>

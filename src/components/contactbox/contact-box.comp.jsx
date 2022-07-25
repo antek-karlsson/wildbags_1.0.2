@@ -64,31 +64,41 @@ const Contactbox = () => {
             Kontaktuj się!
           </Heading>
           <FormControl isRequired>
-            <FormLabel>Imię</FormLabel>
+            <FormLabel id="amatic-paragraph" fontSize={"1.5rem"}>
+              Imię
+            </FormLabel>
             <InputGroup>
               <InputLeftElement children={<FiUser />} />
               <Input type={"text"} id={"name"} name={"name"} />
             </InputGroup>
           </FormControl>
           <FormControl isRequired>
-            <FormLabel>Email</FormLabel>
+            <FormLabel id="amatic-paragraph" fontSize={"1.5rem"}>
+              Email
+            </FormLabel>
             <InputGroup>
               <InputLeftElement children={<FiMail />} />
               <Input type={"email"} id={"email"} name={"email"} />
             </InputGroup>
           </FormControl>
           <FormControl isRequired>
-            <FormLabel>Temat</FormLabel>
+            <FormLabel id="amatic-paragraph" fontSize={"1.5rem"}>
+              Temat
+            </FormLabel>
             <InputGroup>
               <InputLeftElement children={<RiQuestionMark />} />
               <Input type={"text"} id={"subject"} name={"subject"} />
             </InputGroup>
           </FormControl>
           <FormControl isRequired>
-            <FormLabel>Wiadomość</FormLabel>
+            <FormLabel id="amatic-paragraph" fontSize={"1.5rem"}>
+              Wiadomość
+            </FormLabel>
             <Textarea id={"message"} name={"message"} />
           </FormControl>
           <Button
+            id="amatic-header"
+            fontSize={"2rem"}
             value={"send"}
             w={"100%"}
             size={"lg"}

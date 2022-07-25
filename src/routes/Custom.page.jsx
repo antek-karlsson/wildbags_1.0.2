@@ -8,7 +8,12 @@ const Custom = () => {
   return (
     <>
       <VStack justify={"space-between"} align={"center"}>
-        <Heading size={"xl"} px={{ base: 12, md: 32, lg: 64 }} py={8}>
+        <Heading
+          id="amatic-header"
+          fontSize={"3rem"}
+          px={{ base: 12, md: 32, lg: 64 }}
+          py={8}
+        >
           Haute couture, czyli torby i kosmetyczki szyte na zamówienie -
           specjalnie dla Ciebie :)
         </Heading>
@@ -18,7 +23,8 @@ const Custom = () => {
           px={{ base: 12, md: 24, lg: 64 }}
           pt={12}
           pb={8}
-          fontSize={{ base: "md", lg: "lg" }}
+          id="amatic-paragraph"
+          fontSize={"1.5rem"}
         >
           1. Powiedz mi jakie kolory najbardziej lubisz i jaki materiał do
           Ciebie przemawia? Czy jesteś fanką stylu retro czy raczej wolisz
@@ -28,7 +34,8 @@ const Custom = () => {
         <Text
           px={{ base: 12, md: 24, lg: 64 }}
           py={8}
-          fontSize={{ base: "md", lg: "lg" }}
+          id="amatic-paragraph"
+          fontSize={"1.5rem"}
         >
           2. Po ustaleniu wszelkich detali otrzymasz ode mnie zdjęcie materiałów
           jakie udało mi się dla Ciebie znaleźć ( a może masz jakiś kawałek
@@ -39,7 +46,8 @@ const Custom = () => {
           px={{ base: 12, md: 24, lg: 64 }}
           pt={8}
           pb={12}
-          fontSize={{ base: "md", lg: "lg" }}
+          id="amatic-paragraph"
+          fontSize={"1.5rem"}
           alignSelf={"flex-start"}
         >
           3. Czas realizacji zależy od indywidualnych ustaleń i tego jakie
