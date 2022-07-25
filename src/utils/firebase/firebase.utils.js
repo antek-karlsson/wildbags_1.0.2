@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getStorage } from "firebase/storage";
+// import { getStorage } from "firebase/storage";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -12,10 +12,10 @@ import {
   doc,
   getDoc,
   setDoc,
-  collection,
-  writeBatch,
-  query,
-  getDocs,
+  // collection,
+  // writeBatch,
+  // query,
+  // getDocs,
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -28,7 +28,7 @@ const firebaseConfig = {
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
-const storage = getStorage();
+// const storage = getStorage();
 const auth = getAuth();
 const db = getFirestore(firebaseApp);
 
