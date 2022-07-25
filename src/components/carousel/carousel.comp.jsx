@@ -38,16 +38,16 @@ const Carousel = () => {
         navigation
         loop={true}
         breakpoints={{
-          300: {
+          0: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          426: {
-            slidesPerView: 3,
+          768: {
+            slidesPerView: 2,
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 50,
           },
         }}
