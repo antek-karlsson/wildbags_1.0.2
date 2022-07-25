@@ -88,7 +88,19 @@ const Contactbox = () => {
             <FormLabel>Wiadomość</FormLabel>
             <Textarea id={"message"} name={"message"} />
           </FormControl>
-          <Button value={"send"} w={"100%"} size={"lg"} type={"submit"}>
+          <Button
+            value={"send"}
+            w={"100%"}
+            size={"lg"}
+            type={"submit"}
+            background={"blackAlpha.900"}
+            color={"whiteAlpha.900"}
+            _hover={{
+              background: "whiteAlpha.900",
+              color: "blackAlpha.900",
+              border: "1px solid black",
+            }}
+          >
             Wyślij
           </Button>
         </VStack>

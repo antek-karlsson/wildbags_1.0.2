@@ -40,12 +40,32 @@ const Footer = () => {
             href="https://www.instagram.com/_wildbags/?hl=pl"
             target="_blank"
           >
-            <IconButton icon={<FiInstagram />} />
+            <IconButton
+              icon={<FiInstagram />}
+              background={"blackAlpha.900"}
+              color={"whiteAlpha.900"}
+              _hover={{
+                background: "whiteAlpha.900",
+                color: "blackAlpha.900",
+                border: "1px solid black",
+              }}
+            />
           </Link>
         </Tooltip>
       </HStack>
       <Link href="https://github.com/Hjalmar-K-sson" target={"_blank"}>
-        <Button leftIcon={<FiGithub />}>©Hjalmar-K-sson 2022</Button>
+        <Button
+          leftIcon={<FiGithub />}
+          background={"blackAlpha.900"}
+          color={"whiteAlpha.900"}
+          _hover={{
+            background: "whiteAlpha.900",
+            color: "blackAlpha.900",
+            border: "1px solid black",
+          }}
+        >
+          ©Hjalmar-K-sson 2022
+        </Button>
       </Link>
     </Stack>
   );
